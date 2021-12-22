@@ -14,6 +14,7 @@ struct LoginView: View {
         VStack(spacing: 40) {
             Title()
             
+            // Evaluate the biometryType and display a button accordingly
             switch authenticationManager.biometryType {
             case .faceID:
                 PrimaryButton(image: "faceid", text: "Login with FaceID")
